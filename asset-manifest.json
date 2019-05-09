@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/xdorijanx/CountrySearch/static/css/main.2cce8147.chunk.css",
-    "main.js": "/xdorijanx/CountrySearch/static/js/main.0b06d9f0.chunk.js",
-    "main.js.map": "/xdorijanx/CountrySearch/static/js/main.0b06d9f0.chunk.js.map",
+    "main.css": "/xdorijanx/CountrySearch/static/css/main.146e0e21.chunk.css",
+    "main.js": "/xdorijanx/CountrySearch/static/js/main.3735ddbe.chunk.js",
+    "main.js.map": "/xdorijanx/CountrySearch/static/js/main.3735ddbe.chunk.js.map",
     "runtime~main.js": "/xdorijanx/CountrySearch/static/js/runtime~main.4eb63311.js",
     "runtime~main.js.map": "/xdorijanx/CountrySearch/static/js/runtime~main.4eb63311.js.map",
-    "static/js/2.b41502e9.chunk.js": "/xdorijanx/CountrySearch/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/xdorijanx/CountrySearch/static/js/2.b41502e9.chunk.js.map",
+    "static/js/2.70f052b0.chunk.js": "/xdorijanx/CountrySearch/static/js/2.70f052b0.chunk.js",
+    "static/js/2.70f052b0.chunk.js.map": "/xdorijanx/CountrySearch/static/js/2.70f052b0.chunk.js.map",
     "index.html": "/xdorijanx/CountrySearch/index.html",
-    "precache-manifest.9b3ace5d3419c05d8f9d589e1d20f55e.js": "/xdorijanx/CountrySearch/precache-manifest.9b3ace5d3419c05d8f9d589e1d20f55e.js",
+    "precache-manifest.6f40b1d74f70e7fb6e244737caaea1a4.js": "/xdorijanx/CountrySearch/precache-manifest.6f40b1d74f70e7fb6e244737caaea1a4.js",
     "service-worker.js": "/xdorijanx/CountrySearch/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/xdorijanx/CountrySearch/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/xdorijanx/CountrySearch/static/media/logo.5d5d9eef.svg"
+    "static/css/main.146e0e21.chunk.css.map": "/xdorijanx/CountrySearch/static/css/main.146e0e21.chunk.css.map"
   }
 }
