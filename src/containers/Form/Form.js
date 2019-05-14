@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { withStyles, TextField } from "@material-ui/core";
+import { withStyles, TextField ,Grid} from "@material-ui/core";
 import CountriesList from "../../components/CountriesList/CountriesList";
 const styles = {
   form: {
@@ -104,7 +104,10 @@ class Form extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.form}>
-        <form onSubmit={e => e.preventDefault()}>
+      <Grid container direction='row' justify='space-evenly'>
+      <Grid item xs={6}>
+      <form onSubmit={e => e.preventDefault()}>
+     
           <TextField
             id="outlined-search"
             label="Search for a Country"
@@ -114,7 +117,8 @@ class Form extends Component {
             variant="outlined"
             onChange={this.onSearchChange}
           />
-
+         
+          
           <TextField
             id="outlined-select-currency-native"
             select
@@ -128,13 +132,17 @@ class Form extends Component {
             margin="normal"
             variant="outlined"
           >
+          
             {regions.map(option => (
               <option key={option} value={option}>
                 {option}
               </option>
             ))}
           </TextField>
+        
         </form>
+        </Grid>
+      </Grid>
         <CountriesList data={this.state.regions} />
       </div>
     );
