@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/xdorijanx/CountrySearch/static/css/main.146e0e21.chunk.css",
-    "main.js": "/xdorijanx/CountrySearch/static/js/main.3735ddbe.chunk.js",
-    "main.js.map": "/xdorijanx/CountrySearch/static/js/main.3735ddbe.chunk.js.map",
-    "runtime~main.js": "/xdorijanx/CountrySearch/static/js/runtime~main.4eb63311.js",
-    "runtime~main.js.map": "/xdorijanx/CountrySearch/static/js/runtime~main.4eb63311.js.map",
-    "static/js/2.70f052b0.chunk.js": "/xdorijanx/CountrySearch/static/js/2.70f052b0.chunk.js",
-    "static/js/2.70f052b0.chunk.js.map": "/xdorijanx/CountrySearch/static/js/2.70f052b0.chunk.js.map",
-    "index.html": "/xdorijanx/CountrySearch/index.html",
-    "precache-manifest.6f40b1d74f70e7fb6e244737caaea1a4.js": "/xdorijanx/CountrySearch/precache-manifest.6f40b1d74f70e7fb6e244737caaea1a4.js",
-    "service-worker.js": "/xdorijanx/CountrySearch/service-worker.js",
-    "static/css/main.146e0e21.chunk.css.map": "/xdorijanx/CountrySearch/static/css/main.146e0e21.chunk.css.map"
+    "main.css": "/CountrySearch/static/css/main.34de6062.chunk.css",
+    "main.js": "/CountrySearch/static/js/main.af431c9b.chunk.js",
+    "main.js.map": "/CountrySearch/static/js/main.af431c9b.chunk.js.map",
+    "runtime~main.js": "/CountrySearch/static/js/runtime~main.b2eff1e9.js",
+    "runtime~main.js.map": "/CountrySearch/static/js/runtime~main.b2eff1e9.js.map",
+    "static/js/2.ab77cb54.chunk.js": "/CountrySearch/static/js/2.ab77cb54.chunk.js",
+    "static/js/2.ab77cb54.chunk.js.map": "/CountrySearch/static/js/2.ab77cb54.chunk.js.map",
+    "index.html": "/CountrySearch/index.html",
+    "precache-manifest.d15afec07839ec38ee70654fb2511c8c.js": "/CountrySearch/precache-manifest.d15afec07839ec38ee70654fb2511c8c.js",
+    "service-worker.js": "/CountrySearch/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/CountrySearch/static/css/main.34de6062.chunk.css.map"
   }
 }
