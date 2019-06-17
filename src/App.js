@@ -1,17 +1,17 @@
 import React from "react";
 
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Navigation from "../src/components/AppBar/AppBar";
 import Form from "./containers/Form/Form";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter basename='/'>
       <div>
         <Navigation />
         <Form />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

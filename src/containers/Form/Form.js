@@ -154,7 +154,7 @@ class Form extends Component {
          
          )
       }}/>
-      <Route  path='/' render={(props) => <CountryProfile data={this.state.regions} {...props}/>} />
+      <Route   path='/' render={(props) => <CountryProfile data={this.state.regions} {...props}/>} />
     </Switch>
 
     
