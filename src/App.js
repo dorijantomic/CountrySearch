@@ -1,16 +1,18 @@
-import React from 'react'
+import React from "react";
 
-import Navigation from '../src/components/AppBar/AppBar'
-import Form from './containers/Form/Form'
+import { BrowserRouter } from "react-router-dom";
+import Navigation from "../src/components/AppBar/AppBar";
+import Form from "./containers/Form/Form";
 
 const App = () => {
   return (
-    <div>
-      <Navigation />
-      <Form />
-    </div>
-  )
-}
+    <BrowserRouter>
+      <div>
+        <Navigation />
+        <Form />
+      </div>
+    </BrowserRouter>
+  );
+};
 
-export default App
-
+export default App;

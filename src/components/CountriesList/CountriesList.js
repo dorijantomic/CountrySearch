@@ -2,6 +2,7 @@ import React from "react";
 import CountryCard from "../CountryCard/CountryCard";
 import Grid from "@material-ui/core/Grid";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { Route } from 'react-router-dom'
 
 const theme = createMuiTheme({
   overrides: {
@@ -16,7 +17,7 @@ const theme = createMuiTheme({
 const CountriesList = props => {
   let countries = [];
   console.log(props.data, "props data inside cou ntries list");
-  debugger;
+
   if (
     props.data instanceof Array ||
     (props.data instanceof Object && props.data.status != "404")

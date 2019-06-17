@@ -1,5 +1,6 @@
 import React from 'react'
 import {Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography, withStyles, createMuiTheme, MuiThemeProvider} from '@material-ui/core'
+import { Link } from 'react-router-dom'
 
 const styles = {
   card: {
@@ -15,16 +16,27 @@ const styles = {
 
 const CountryCard = (props) => {
 
+const routePage = (e) => {
+  return <Link to={`/${e}`} />
+  }
+
   const { classes } = props
   return (
     <div>
+     
+      
+     
       <Card className={classes.card}>
           <CardActionArea>
+          <Link to={`${props.name}`} >
           <CardMedia
           className={classes.media}
           image={props.flag}
           title="Contemplative Reptile"
+          id={props.name}
+          
         />
+          </Link>
           </CardActionArea>
           <CardContent>
               <Typography variant='h5' component='h2' gutterBottom align='left'>
@@ -41,6 +53,7 @@ const CountryCard = (props) => {
               </Typography>
           </CardContent>
       </Card>
+    
     </div>
   )
 }
