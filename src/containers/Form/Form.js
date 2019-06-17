@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-
 import { withStyles, TextField ,Grid} from "@material-ui/core";
 import CountriesList from "../../components/CountriesList/CountriesList";
+import CountryProfile from '../../components/CountryProfile/CountryProfile'
+import { Route, Switch } from 'react-router-dom' 
 const styles = {
   form: {
     paddingTop: "75px"
@@ -15,7 +16,8 @@ const regions = ["All", "Africa", "Americas", "Asia", "Europe", "Oceania"];
 
 class Form extends Component {
   state = {
-    regions: "all"
+    regions: "all",
+    currentCountry : null,
   };
 
   componentDidMount() {
@@ -100,50 +102,64 @@ class Form extends Component {
   };
 
   render() {
+   
     console.log(this.state.regions, "render method");
     const { classes } = this.props;
     return (
       <div className={classes.form}>
-      <Grid container direction='row' justify='space-evenly'>
-      <Grid item xs={6}>
-      <form onSubmit={e => e.preventDefault()}>
-     
-          <TextField
-            id="outlined-search"
-            label="Search for a Country"
-            type="search"
-            className={classes.textField}
-            margin="normal"
-            variant="outlined"
-            onChange={this.onSearchChange}
-          />
+   
+    <Switch>
+      <Route exact path='/' render = {() => {
+         return (
+          <Grid container direction='row' justify='space-evenly'>
+          <Grid item xs={6}>
+          <form onSubmit={e => e.preventDefault()}>
          
-          
-          <TextField
-            id="outlined-select-currency-native"
-            select
-            label="Native select"
-            // value={this.state.currency}
-            onChange={this.handleChange}
-            SelectProps={{
-              native: true
-            }}
-            helperText="Please select your currency"
-            margin="normal"
-            variant="outlined"
-          >
-          
-            {regions.map(option => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </TextField>
-        
-        </form>
-        </Grid>
-      </Grid>
-        <CountriesList data={this.state.regions} />
+              <TextField
+                id="outlined-search"
+                label="Search for a Country"
+                type="search"
+                className={classes.textField}
+                margin="normal"
+                variant="outlined"
+                onChange={this.onSearchChange}
+              />
+             
+              
+              <TextField
+                id="outlined-select-currency-native"
+                select
+                label="Native select"
+                onChange={this.handleChange}
+                SelectProps={{
+                  native: true
+                }}
+                helperText="Please select your currency"
+                margin="normal"
+                variant="outlined"
+              >
+              
+                {regions.map(option => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </TextField>
+            
+            </form>
+           
+            </Grid>
+            <CountriesList data={this.state.regions}/>
+          </Grid>
+         
+         )
+      }}/>
+      <Route  path='/' render={(props) => <CountryProfile data={this.state.regions} {...props}/>} />
+    </Switch>
+
+    
+      
+       
       </div>
     );
   }
