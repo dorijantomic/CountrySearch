@@ -8,6 +8,7 @@ import {
   CardMedia,
   Button,
   Typography,
+  Grid,
   withStyles,
   createMuiTheme,
   MuiThemeProvider
@@ -16,10 +17,13 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345
+    width: '100%',
+    height: '100%',
   },
   media: {
-    height: 140
+    height: 370,
+    width: 500
+    
   }
 });
 
@@ -37,6 +41,7 @@ const CountryProfile = props => {
     <div>
       {console.log(props)}
       <Card className={classes.card}>
+          <Grid container justify='center'>
         <CardActionArea>
           <CardMedia
             className={classes.media}
@@ -81,6 +86,8 @@ const CountryProfile = props => {
             Learn More
           </Button>
         </CardActions>
+              
+        </Grid>
       </Card>
     </div>
   );
